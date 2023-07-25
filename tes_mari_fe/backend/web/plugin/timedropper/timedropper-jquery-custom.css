@@ -1,0 +1,12 @@
+.karen-picker {
+    --td-textColor: #555555;
+    --td-backgroundColor: #FFF;
+    --td-primaryColor: #18A2B8;
+    --td-displayBackgroundColor: #FFF;
+    --td-displayBorderColor: #18A2B850;
+    --td-displayBorderStyle: solid;
+    --td-displayBorderWidth: 4px;
+    --td-handsColor: #18A2B850;
+    --td-handleColor: #18A2B8;
+    --td-handlePointColor: white;
+}

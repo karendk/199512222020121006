@@ -1,0 +1,21 @@
+#change php
+AddHandler application/x-httpd-php74 .php
+<IfModule mod_suphp.c>
+    suPHP_ConfigPath /opt/php74/lib
+</IfModule>
+
+#enable write
+Options +FollowSymLinks
+IndexIgnore */*
+RewriteEngine on
+
+#redirect
+RewriteCond %{REQUEST_URI} ^/
+RewriteRule ^(\/?.*)$ backend/web/$1 [L]
+
+#rule
+php_value memory_limit 900M
+php_value post_max_size 100M
+php_value upload_max_filesize 100M
+php_value max_execution_time 9999
+php_value memory_limit 9999M
